@@ -25,9 +25,11 @@ public class BaseClass
 	
 	public static WebDriver instantiateDriver()
 	{
-		ChromeOptions co = new ChromeOptions();
-		co.addArguments("--no-sandbox");
-		WebDriver driver = new ChromeDriver(co);
+		ChromeOptions chromOptions = new ChromeOptions();
+		chromOptions.addArguments("--no-sandbox");
+		chromOptions.addArguments("--disable-setuid-sandbox");
+		chromOptions.addArguments("--remote-debugging-port=9222");
+		WebDriver driver = new ChromeDriver(chromOptions);
 		return driver;
 	}
 	
