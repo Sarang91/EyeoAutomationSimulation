@@ -7,6 +7,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,6 +18,7 @@ import base.BaseClass;
 import utility.TestDataReader;
 import utility.UrlEncoder;
 
+//Test Class for BlockingPage - Contains tests of BlockingPage 
 public class TestBlockingPage extends BaseClass
 {
 	public WebDriver driver;

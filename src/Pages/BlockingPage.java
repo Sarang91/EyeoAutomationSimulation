@@ -7,13 +7,13 @@ import java.util.*;
 
 import base.BaseClass;
 
+//Page class for BlockingPage, contains all related locators/elements and actions on those
 public class BlockingPage extends BaseClass
 {
 	public WebDriver driver;
 	
 	public BlockingPage(WebDriver driver)
 	{
-		System.out.println("Inside BlockingPage constructor");
 		this.driver = driver;
 	}
 

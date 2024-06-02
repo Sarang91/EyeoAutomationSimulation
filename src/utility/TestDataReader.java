@@ -4,6 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
+//TestDataReader class - reads the properties file and stores them into static variables
 public class TestDataReader 
 {
 	public static String blockingPageUrl;
