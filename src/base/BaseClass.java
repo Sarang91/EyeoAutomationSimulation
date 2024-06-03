@@ -27,8 +27,9 @@ public class BaseClass
 	{
 		ChromeOptions chromOptions = new ChromeOptions();
 		chromOptions.addArguments("--no-sandbox");
-		chromOptions.addArguments("--disable-setuid-sandbox");
-		chromOptions.addArguments("--remote-debugging-port=9222");
+		chromOptions.addArguments("--start-maximized");
+		//chromOptions.addArguments("--disable-setuid-sandbox");
+	    //chromOptions.addArguments("--remote-debugging-port=9222");
 		WebDriver driver = new ChromeDriver(chromOptions);
 		return driver;
 	}
